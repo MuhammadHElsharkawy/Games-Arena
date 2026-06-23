@@ -1,3 +1,30 @@
+const sections = document.querySelectorAll('section');
+const navLinks = document.querySelectorAll('.nav-link');
+
+const options = {
+    threshold: 0.5
+};
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            const currentId = entry.target.getAttribute('id');
+
+            navLinks.forEach((link) => {
+                link.classList.remove('text-primary');
+
+                if (link.getAttribute('href') == `#${currentId}`) {
+                    link.classList.add('text-primary');
+                }
+            })
+        }
+    })
+}, options)
+
+sections.forEach(section => {
+    observer.observe(section)
+})
+
 const mobileNav = document.querySelector('#mobile-nav');
 let ismobileNavOpen = false;
 

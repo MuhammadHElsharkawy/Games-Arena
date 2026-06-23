@@ -13,16 +13,6 @@
 :root {
   --primary-color: #c9fe1b;
 }
-/* .chakra {
-  font-family: "Chakra Petch", sans-serif;
-}
-.days {
-  font-family: "Days One", sans-serif;
-}
-
-.text-primary {
-  color: var(--primary-color);
-} */
 
 .section-separator {
   background: linear-gradient(90deg, transparent, var(--primary-color) 20%, var(--primary-color) 80%, transparent);

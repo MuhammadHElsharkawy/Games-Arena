@@ -1,9 +1,10 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Games website</title>
+    <link rel="icon" href="./images/favicon.png" />
     <link rel="stylesheet" href="./src/all.min.css" />
     <link rel="stylesheet" href="./src/output.css" />
     <link
@@ -25,33 +26,38 @@
             </div>
             <ul class="hidden lg:flex items-center gap-6">
               <li>
-                <a href="#home" class="text-primary hover:text-primary">Home</a>
+                <a
+                  href="#home"
+                  class="text-light hover:text-primary transition nav-link"
+                >
+                  Home
+                </a>
               </li>
               <li>
                 <a
                   href="#ourGames"
-                  class="hover:text-primary transition text-light"
+                  class="hover:text-primary transition text-light nav-link"
                   >OUR GAMES</a
                 >
               </li>
               <li>
                 <a
                   href="#whatWeDo"
-                  class="text-light hover:text-primary transition"
+                  class="text-light hover:text-primary transition nav-link"
                   >What We Do</a
                 >
               </li>
               <li>
                 <a
                   href="#ourTeam"
-                  class="text-light hover:text-primary transition"
+                  class="text-light hover:text-primary transition nav-link"
                   >Our Team</a
                 >
               </li>
               <li>
                 <a
                   href="#contact"
-                  class="text-light hover:text-primary transition"
+                  class="text-light hover:text-primary transition nav-link"
                   >Contact Us</a
                 >
               </li>
@@ -88,38 +94,50 @@
         class="hidden bg-dark border-t border-gray-800 font-chakra"
       >
         <div class="max-w-7xl mx-auto px-6 py-4 flex flex-col gap-4">
-          <ul class="flex flex-col gap-4">
-            <li
-              class="text-primary hover:text-primary transition-colors cursor-pointer py-2"
+          <div class="flex flex-col gap-4">
+            <a
+              onclick="closeMobileNav()"
+              class="text-light hover:text-primary transition-colors cursor-pointer py-2 nav-link"
+              href="#home"
             >
-              <a href=""> Home</a>
-            </li>
-            <li
-              class="text-light hover:text-primary transition-colors cursor-pointer py-2"
+              Home</a
             >
-              <a href="" class=""> OUR GAMES</a>
-            </li>
-            <li
-              class="text-light hover:text-primary transition-colors cursor-pointer py-2"
+            <a
+              onclick="closeMobileNav()"
+              class="text-light hover:text-primary transition-colors cursor-pointer py-2 nav-link"
+              href="#ourGames"
             >
-              <a href=""> What We Do</a>
-            </li>
-            <li
-              class="text-light hover:text-primary transition-colors cursor-pointer py-2"
+              OUR GAMES</a
             >
-              <a href=""> Our Team</a>
-            </li>
-            <li
-              class="text-light hover:text-primary transition-colors cursor-pointer py-2"
+            <a
+              onclick="closeMobileNav()"
+              class="text-light hover:text-primary transition-colors cursor-pointer py-2 nav-link"
+              href="#whatWeDo"
             >
-              <a href=""> Tournaments</a>
-            </li>
-            <li
-              class="text-light hover:text-primary transition-colors cursor-pointer py-2"
+              What We Do</a
             >
-              <a href=""> Contact Us</a>
-            </li>
-          </ul>
+            <a
+              onclick="closeMobileNav()"
+              class="text-light hover:text-primary transition-colors cursor-pointer py-2 nav-link"
+              href="#ourTeam"
+            >
+              Our Team</a
+            >
+            <a
+              onclick="closeMobileNav()"
+              class="text-light hover:text-primary transition-colors cursor-pointer py-2 nav-link"
+              href="#tournaments"
+            >
+              Tournaments</a
+            >
+            <a
+              onclick="closeMobileNav()"
+              class="text-light hover:text-primary transition-colors cursor-pointer py-2 nav-link"
+              href="#contact"
+            >
+              Contact Us</a
+            >
+          </div>
           <div class="flex flex-col gap-3 pt-4 border-t border-gray-800">
             <button
               class="text-light hover:text-primary cursor-pointer text-left"
@@ -778,7 +796,7 @@
     </div>
 
     <section id="sponsors" class="py-20 overflow-hidden bg-dark">
-      <div class="px-6">
+      <div class="px-4 sm:px-6">
         <div class="relative isolate">
           <div class="relative overflow-hidden">
             <div class="flex gap-4 min-w-max animate-scroll-left mb-4">
@@ -1293,7 +1311,7 @@
       </div>
     </section>
 
-    <section id="outTeam" class="py-24 bg-dark">
+    <section id="ourTeam" class="py-24 bg-dark">
       <div class="max-w-7xl mx-auto px-6">
         <div class="text-center mb-16">
           <p
