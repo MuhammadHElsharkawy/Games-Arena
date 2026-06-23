@@ -145,9 +145,16 @@
 
     <section
       id="home"
-      class="bg-[linear-gradient(#000000e0,#000000e0),url(/images/hero-bg.jpg)] min-h-screen bg-center bg-cover flex items-center pt-30 pb-16 bg-scroll"
+      class="min-h-screen bg-center bg-cover flex items-center pt-30 pb-16 bg-scroll"
+      style="
+        background:
+          linear-gradient(#000000e0, #000000e0), url(./images/hero-bg.jpg);
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+      "
     >
-      <div class="max-w-7xl mx-auto px-6 py-4">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 py-4">
         <div
           class="grid gap-8 md:gap-12 grid-cols-1 lg:grid-cols-2 items-center"
         >
@@ -167,15 +174,15 @@
               technology and endless possibilities.
             </p>
             <div
-              class="flex items-center gap-4 justify-center lg:justify-start"
+              class="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center lg:justify-start"
             >
               <button
-                class="bg-primary text-dark py-4 px-8 rounded-lg font-bold font-chakra cursor-pointer hover:bg-primary/80 before:transition-all before:duration-500 overflow-hidden transition-all relative before:content-[''] before:absolute before:bg-linear-to-r before:from-[#0000] before:via-[#fff6] before:to-[#0000] before:w-full before:h-full before:top-0 before:-left-full hover:before:left-full"
+                class="bg-primary text-dark py-3 sm:py-4 px-6 sm:px-8 rounded-lg font-bold text-sm sm:text-base font-chakra cursor-pointer hover:bg-primary/80 before:transition-all before:duration-500 overflow-hidden transition-all relative before:content-[''] before:absolute before:bg-linear-to-r before:from-[#0000] before:via-[#fff6] before:to-[#0000] before:w-full before:h-full before:top-0 before:-left-full hover:before:left-full"
               >
                 Start Gaming Now
               </button>
               <button
-                class="border-2 border-primary text-primary py-4 px-8 rounded-lg font-bold font-chakra cursor-pointer hover:bg-primary hover:text-dark before:transition-all before:duration-500 overflow-hidden transition-all relative before:content-[''] before:absolute before:bg-linear-to-r before:from-[#0000] before:via-[#fff6] before:to-[#0000] before:w-full before:h-full before:top-0 before:-left-full hover:before:left-full"
+                class="border-2 border-primary text-primary py-3 sm:py-4 px-6 sm:px-8 rounded-lg font-bold text-sm sm:text-base font-chakra cursor-pointer hover:bg-primary hover:text-dark before:transition-all before:duration-500 overflow-hidden transition-all relative before:content-[''] before:absolute before:bg-linear-to-r before:from-[#0000] before:via-[#fff6] before:to-[#0000] before:w-full before:h-full before:top-0 before:-left-full hover:before:left-full"
               >
                 Watch Tournaments
               </button>
@@ -1294,10 +1301,10 @@
           >
             OUR TEAM
           </p>
-          <h2 class="text-5xl font-bold font-days text-light">
+          <h2 class="text-4xl sm:text-5xl font-bold font-days text-light">
             Our Best Team Members
           </h2>
-          <p class="text-xl text-gray-400 mt-6 font-chakra">
+          <p class="text-lg sm:text-xl text-gray-400 mt-6 font-chakra">
             Meet the professional gamers and experts behind our success
           </p>
         </div>
@@ -1558,26 +1565,30 @@
       <div class="max-w-7xl mx-auto px-6">
         <div class="text-center mb-16">
           <p
-            class="text-primary font-bold tracking-[0.2em] mb-4 relative inline-block before:content-[''] before:absolute before:-left-20 before:top-1/2 before:-translate-y-1/2 before:w-16 before:h-0.5 before:bg-linear-to-r before:from-transparent before:via-primary before:to-primary after:content-[''] after:absolute after:-right-20 after:top-1/2 after:-translate-y-1/2 after:w-16 after:h-0.5 after:bg-linear-to-l after:from-transparent after:via-primary after:to-primary"
+            class="text-primary text-sm md:text-base font-bold tracking-[0.2em] mb-4 relative inline-block before:content-[''] before:absolute before:-left-20 before:top-1/2 before:-translate-y-1/2 before:w-16 before:h-0.5 before:bg-linear-to-r before:from-transparent before:via-primary before:to-primary after:content-[''] after:absolute after:-right-20 after:top-1/2 after:-translate-y-1/2 after:w-16 after:h-0.5 after:bg-linear-to-l after:from-transparent after:via-primary after:to-primary"
           >
             CONTACT US
           </p>
-          <h2 class="text-5xl font-bold text-light font-days">Get In Touch</h2>
-          <p class="text-xl text-gray-400 mt-6 font-chakra">
+          <h2 class="text-4xl sm:text-5xl font-bold text-light font-days">
+            Get In Touch
+          </h2>
+          <p class="text-lg sm:text-xl text-gray-400 mt-6 font-chakra">
             Have questions or need support? We're here to help!
           </p>
         </div>
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
           <div class="space-y-8">
-            <div class="bg-gray-800 rounded-2xl p-8">
-              <div class="flex items-center space-x-6 mb-6">
+            <div class="bg-gray-800 rounded-2xl p-4 md:p-8">
+              <div class="flex items-center gap-4 sm:gap-6">
                 <div
-                  class="w-16 h-16 bg-primary rounded-full flex items-center justify-center"
+                  class="w-10 h-10 sm:w-16 sm:h-16 bg-primary rounded-full flex items-center justify-center shrink-0"
                 >
-                  <i class="fa-solid fa-map-marker-alt text-dark text-2xl"></i>
+                  <i
+                    class="fa-solid fa-map-marker-alt text-dark text-lg sm:text-xl md:text-2xl"
+                  ></i>
                 </div>
                 <div>
-                  <h3 class="text-xl font-bold text-light font-days">
+                  <h3 class="text-lg sm:text-xl font-bold text-light font-days">
                     Our Location
                   </h3>
                   <p class="text-gray-400 font-chakra">
@@ -1586,12 +1597,14 @@
                 </div>
               </div>
             </div>
-            <div class="bg-gray-800 rounded-2xl p-8">
-              <div class="flex items-center space-x-6 mb-6">
+            <div class="bg-gray-800 rounded-2xl p-4 md:p-8">
+              <div class="flex items-center space-x-6">
                 <div
-                  class="w-16 h-16 bg-primary rounded-full flex items-center justify-center"
+                  class="w-10 h-10 sm:w-16 sm:h-16 bg-primary rounded-full flex items-center justify-center shrink-0"
                 >
-                  <i class="fa-solid fa-phone text-dark text-2xl"></i>
+                  <i
+                    class="fa-solid fa-phone text-dark text-lg sm:text-xl md:text-2xl"
+                  ></i>
                 </div>
                 <div>
                   <h3 class="text-xl font-bold text-light font-days">
@@ -1601,12 +1614,14 @@
                 </div>
               </div>
             </div>
-            <div class="bg-gray-800 rounded-2xl p-8">
-              <div class="flex items-center space-x-6 mb-6">
+            <div class="bg-gray-800 rounded-2xl p-4 md:p-8">
+              <div class="flex items-center space-x-6">
                 <div
-                  class="w-16 h-16 bg-primary rounded-full flex items-center justify-center"
+                  class="w-10 h-10 sm:w-16 sm:h-16 bg-primary rounded-full flex items-center justify-center shrink-0"
                 >
-                  <i class="fa-solid fa-envelope text-dark text-2xl"></i>
+                  <i
+                    class="fa-solid fa-envelope text-dark text-lg sm:text-xl md:text-2xl"
+                  ></i>
                 </div>
                 <div>
                   <h3 class="text-xl font-bold text-light font-days">
@@ -1617,7 +1632,7 @@
               </div>
             </div>
             <div
-              class="bg-linear-to-r from-primary to-green-400 rounded-2xl p-8 text-dark"
+              class="bg-linear-to-r from-primary to-green-400 rounded-2xl p-6 md:p-8 text-dark"
             >
               <h3 class="text-2xl font-bold mb-4 font-days">
                 Join Our Community
@@ -1649,7 +1664,7 @@
               </div>
             </div>
           </div>
-          <div class="bg-gray-800 rounded-2xl p-8">
+          <div class="bg-gray-800 rounded-2xl p-6 sm:p-8">
             <h3 class="text-2xl font-bold mb-6 text-light font-days">
               Send us a Message
             </h3>
