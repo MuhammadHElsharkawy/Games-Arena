@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Days+One&display=swap");
+
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #cbfe1c;
+  --color-light: #f1f1f1;
+  --color-dark: #0b0e13;
+  --font-chakra: "Chakra Petch", sans-serif;
+  --font-days: "Days One", sans-serif;
+}
+
+:root {
+  --primary-color: #c9fe1b;
+}
+/* .chakra {
+  font-family: "Chakra Petch", sans-serif;
+}
+.days {
+  font-family: "Days One", sans-serif;
+}
+
+.text-primary {
+  color: var(--primary-color);
+} */
+
+.section-separator {
+  background: linear-gradient(90deg, transparent, var(--primary-color) 20%, var(--primary-color) 80%, transparent);
+  max-width: 37.5rem;
+  width: 80%;
+  height: 2px;
+  box-shadow: 0 0 10px var(--primary-color), 0 0 20px #cbfe1c4d;
+}
+
+.animate-scroll-left {
+  animation: 70s linear infinite scroll-left;
+}
+@keyframes scroll-left {
+  0% {
+    transform: translate(0);
+  }
+  100% {
+    transform: translate(-50%);
+  }
+}
+
+.animate-scroll-right {
+  animation: 70s linear infinite scroll-right;
+}
+@keyframes scroll-right {
+  0% {
+    transform: translate(-50%);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
+.rotate-text {
+  writing-mode: vertical-rl;
+}
